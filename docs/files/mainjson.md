@@ -1,9 +1,9 @@
 # Main JSON
 Sora uses a simple JSON file to manage and integrate different streaming modules. You can easily configure new modules by editing this JSON file, adding details like the source name, URLs, and streaming settings.
 
-# JSON Fields
+## JSON Fields
 
-## Fields Overview
+### Fields Overview
 
 | Field          | Type   | Description                                     | Required?      | Variables
 |----------------|--------|-------------------------------------------------|----------------|----------|
@@ -25,7 +25,7 @@ Sora uses a simple JSON file to manage and integrate different streaming modules
 
 ---
 
-## Full Format
+### Full Format
 
 ```json
 {
@@ -48,7 +48,7 @@ Sora uses a simple JSON file to manage and integrate different streaming modules
 }
 ```
 
-## Example
+### Example
 ```json
 {
    "sourceName": "Hianime",
