@@ -4,6 +4,8 @@ Due to the limitations of Swift's JavaScriptCore framework, certain JavaScript f
 
 ## New available methods
 
+---
+
 ### fetch("http://example.org")
 
 Returns the fetched URL as a `String`
@@ -22,6 +24,8 @@ const data = await response;
 ```
 
 Goes without saying that this applies to StreamAsync mode too. You shouldn't need these methods in normal mode but if you do, use the above mentioned way.
+
+---
 
 ### fetchv2("http://example.org", headers)
 
@@ -50,6 +54,7 @@ const textData = await response.text(); // Retrieves text
 const jsonData = await response.json(); // Parses JSON
 ```
 
+---
 
 ### atob(base64String)
 
@@ -67,7 +72,7 @@ console.log(decoded); // Outputs: "Hello, world!"
 #### Error Handling`
 Returns null if the input is not a valid Base64 string.
 
-
+---
 
 ### btoa(string)
 
