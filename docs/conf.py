@@ -30,6 +30,12 @@ source_suffix = ['.rst', '.md']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_css_files = ['custom.css']
-html_js_files = ['copy_button.js']
+html_css_files = [
+    'custom.css',
+    'dark_mode.css'
+    ]
+html_js_files = [
+    'copy_button.js',
+    'dark_mode.js'
+    ]
 

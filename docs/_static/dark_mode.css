@@ -1,0 +1,45 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #4dabf7;
+}
+
+body.dark-mode .wy-nav-content {
+    background-color: #252525;
+}
+
+body.dark-mode .wy-side-nav-search,
+body.dark-mode .wy-menu-vertical {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .wy-nav-top {
+    background-color: #111;
+}
+
+body.dark-mode pre,
+body.dark-mode code {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dark-mode-toggle:hover {
+    background: #444;
+}
