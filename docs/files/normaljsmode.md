@@ -1,4 +1,4 @@
-# Normal Javascript mode
+# Normal JavaScript mode
 
 For more examples see the [Modules Repo](https://github.com/50n50/sources)
 
@@ -12,7 +12,6 @@ Input: `HTML` \
 Output:`JSON`
 
 ```json
-:caption: Output Example
 {
    "title": "Example Title",
    "image": "https://example.com/image.jpg",
