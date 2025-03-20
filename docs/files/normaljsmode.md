@@ -11,6 +11,8 @@ In the normal Javascript mode Sora will scrape the HTML of a link and provide it
 Input: `HTML` \
 Output:`JSON`
 
+Extracts the search results from the provided HTML.
+
 ```json
 {
    "title": "Example Title",
@@ -22,6 +24,8 @@ Output:`JSON`
 ### extractDetails
 Input: `HTML` \
 Output:`JSON`
+
+Extracts the details from the provided HTML.
 
 ```json
 {
@@ -35,6 +39,8 @@ Output:`JSON`
 Input: `HTML` \
 Output:`JSON`
 
+Extracts the episodes from the provided HTML.
+
 ```json
 {
    "href": "https://grani.me/episode/123",
@@ -45,6 +51,8 @@ Output:`JSON`
 ### extractStreamUrl
 Input: `HTML` \
 Output:`URL`
+
+Extracts the stream from the provided HTML.
 
 ```txt
 https://example.com/stream/video.mp4

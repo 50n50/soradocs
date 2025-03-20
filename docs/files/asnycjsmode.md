@@ -11,6 +11,8 @@ In the async Javascript mode Sora will only provide the search keyword for the t
 Input: `Keyword (string)` \
 Output:`JSON`
 
+Extracts the search results from the provided keyword.
+
 ```json
 {
    "title": "Example Title",
@@ -22,6 +24,8 @@ Output:`JSON`
 ### extractDetails
 Input: `URL` \
 Output:`JSON`
+
+Extracts the details from the provided URL.
 
 ```json
 {
@@ -35,6 +39,8 @@ Output:`JSON`
 Input: `URL` \
 Output:`JSON`
 
+Extracts the expisodes from the provided URL.
+
 ```json
 {
    "href": "https://grani.me/episode/123",
@@ -45,6 +51,8 @@ Output:`JSON`
 ### extractStreamUrl
 Input: `URL` \
 Output:`URL`
+
+Extracts the stream url from the provided URL.
 
 ```txt
 https://example.com/stream/video.mp4
