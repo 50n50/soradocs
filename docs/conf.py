@@ -15,7 +15,8 @@ release = '1.0.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'myst_parser'
 ]
 
 templates_path = ['_templates']
