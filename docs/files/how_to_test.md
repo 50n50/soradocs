@@ -6,7 +6,7 @@ There are a couple ways to test your module:
 
 Huge thanks to [@JMcrafter26](https://github.com/jmcrafter26) for making this website, it simulates Sora's frontend, a great way to quickly test your modules on PC in case you don't own a Mac.
 
-The website and FAQ can be found here: [https://api.jm26.net/sora-modules/](https://github.com/jmcrafter26)
+The website and FAQ can be found here: [Sora Web-UI](https://sora.jm26.net/web-ui/)
 
 ## With Sora on Mac
 
