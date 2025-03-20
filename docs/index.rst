@@ -11,7 +11,7 @@ Welcome to documentation on how to make modules for Sora, a modular web scraping
 
 .. toctree::
    :maxdepth: 2
-   
+
    files/mainjson.md
    files/normaljsmode.md
-   files/normaljsmode.rst
+   files/normaljsmode2.rst
