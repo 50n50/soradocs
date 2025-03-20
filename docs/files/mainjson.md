@@ -43,7 +43,7 @@ Sora uses a simple JSON file to manage and integrate different streaming modules
    "searchBaseUrl": "https://your-source.com/search=%s",
    "scriptUrl": "https://your-source.com/script.js",
    "asyncJS": true,
-   "streamAsyncJS": false.
+   "streamAsyncJS": false,
    "softsub": true
 }
 ```

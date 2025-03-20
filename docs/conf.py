@@ -29,8 +29,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_theme_options = {
-    "collapse_navigation": False,  # Ensures the menu does not collapse
-    "navigation_depth": 1,  # Adjusts menu depth
-    "sticky_navigation": False,  # Disables the sticky flyout behavior
-}
+html_css_files = ['custom.css']
