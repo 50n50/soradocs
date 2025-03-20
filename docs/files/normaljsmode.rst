@@ -1,4 +1,4 @@
-Normal Javascript mode
+Normal Javascript mode2
 ======================
 
 For more examples see the `Modules Repo <https://github.com/50n50/sources>`_.
