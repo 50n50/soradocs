@@ -35,7 +35,6 @@ html_css_files = [
     'dark_mode.css'
     ]
 html_js_files = [
-    'copy_button.js',
-    'dark_mode.js'
+    'copy_button.js'
     ]
-
+html_logo = "_static/logo.png"
