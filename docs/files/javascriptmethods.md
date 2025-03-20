@@ -43,3 +43,45 @@ The returned object contains:
 
 - `.json()`: Returns a Promise that resolves to the response parsed as a JSON object.
 
+
+```javascript
+const response = await fetchv2("http://example.org");
+const textData = await response.text(); // Retrieves text
+const jsonData = await response.json(); // Parses JSON
+```
+
+
+### atob(base64String)
+
+Decodes a Base64-encoded ASCII `string` back into a binary string.
+
+#### Returns:
+A String containing the decoded data.
+
+#### Example Usage:
+```javascript
+const decoded = atob("SGVsbG8sIHdvcmxkIQ=="); 
+console.log(decoded); // Outputs: "Hello, world!"
+```
+
+#### Error Handling`
+Returns null if the input is not a valid Base64 string.
+
+
+
+### btoa(string)
+
+Encodes a given binary string into a Base64-encoded ASCII string.
+
+#### Returns:
+A `string` containing the Base64 representation of the input.
+
+#### Example Usage:
+```javascript
+const encoded = btoa("Hello, world!"); 
+console.log(encoded); // Outputs: "SGVsbG8sIHdvcmxkIQ=="
+```
+
+#### Error Handling`
+Returns null if the input is not a valid Base64 string.
+
