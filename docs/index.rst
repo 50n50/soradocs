@@ -13,6 +13,7 @@ Welcome to documentation on how to make modules for Sora, a modular web scraping
    :maxdepth: 1
 
    files/mainjson.md
+   files/javascriptmethods.md
    files/normaljsmode.md
    files/asnycjsmode.md
    files/streamasyncjsmode.md
