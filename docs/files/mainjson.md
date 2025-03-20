@@ -19,9 +19,9 @@ Sora uses a simple JSON file to manage and integrate different streaming modules
 | `quality`      | string | Quality of the stream.                              |[x]    |`360p`, `720p`, `1080p` |
 | `searchBaseUrl`| string | Search URL of the source. Must include `%s` where the search query will go. |[x]    |`%s` |
 | `scriptUrl`    | string | URL to the raw link of the JavaScript file.         |[x]    |
-| `asyncJS`      | boolean| Set to `true` to load the script asynchronously.    |[x]    | `true`, `false` |
-| `streamAsyncJS`| boolean| Set to `true` to only load the stream function asynchronously. |[x] | `true`, `false` |
-| `softsub`      | boolean| Set to `true` to load subtitles.                    |[x]   | `true`, `false` |
+| `asyncJS`      | boolean| Set to `true` to load the script asynchronously.    |[ ]    | `true`, `false` |
+| `streamAsyncJS`| boolean| Set to `true` to only load the stream function asynchronously. |[ ] | `true`, `false` |
+| `softsub`      | boolean| Set to `true` to load subtitles.                    |[ ]   | `true`, `false` |
 
 ---
 
