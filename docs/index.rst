@@ -14,4 +14,3 @@ Welcome to documentation on how to make modules for Sora, a modular web scraping
 
    files/mainjson.md
    files/normaljsmode.md
-   files/normaljsmode2.rst
