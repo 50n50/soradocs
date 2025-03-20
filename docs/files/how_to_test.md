@@ -39,3 +39,17 @@ You will find all the modules there, unfortunately they will have some gibberish
 ```{warning}
 The Sora logger is pretty bad, so it is recommenced to test on PC first if you want proper logs!
 ```
+
+To test in Sora, you will obviously need to first sideload the app, join the official discord for help if needed!
+
+To add the module to the app, host your java script file and JSON on your preferred file hoster (needs to support viewing the raw file), it is recommended to use GitHub.
+
+Once you've hosted the file, you will need to copy the raw link of the java script file and add it to your JSON, after doing this you will need to copy the raw link of your JSON, which will look something like this:
+
+```text
+https://raw.githubusercontent.com/50n50/maisgay/refs/heads/main/hianime/hianime.json
+```
+
+Please make sure you are copying the raw link!
+
+After making modifications, remove the module from Sora and restart to app before re-adding it!

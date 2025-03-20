@@ -1,6 +1,8 @@
 # SoftSubs Javascript mode
 
+```{note}
 For more examples see the [Modules Repo](https://github.com/50n50/sources)
+```
 
 In the softsub mode you extract the subtitles alongside the stream, usually you'd need to have async or streamAsync mode activated for this too.
 

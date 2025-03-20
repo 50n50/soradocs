@@ -1,6 +1,8 @@
 # StreamAsync Javascript mode
 
+```{note}
 For more examples see the [Modules Repo](https://github.com/50n50/sources)
+```
 
 In the streamAsyncJS mode you extract the stream URL asynchronously instead of regular scraping. The function will still be provided with an HTML code. 
 

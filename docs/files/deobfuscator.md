@@ -156,3 +156,8 @@ function unpack(source) {
     }
 }
 ```
+
+```{note}
+Credit to GitHub user @mnsrulz for Unpacker Node library
+Credits to @jcpiccodev for writing the full deobfuscator
+```

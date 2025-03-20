@@ -1,6 +1,8 @@
 # Async JavaScript Mode
 
+```{note}
 For more examples see the [Modules Repo](https://github.com/50n50/sources)
+```
 
 In the async Javascript mode Sora will only provide the search keyword for the the searchResults function and the URL for the other three functions. Aside from that, the response format is required to be the same as normal mode.
 
