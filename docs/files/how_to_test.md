@@ -52,7 +52,7 @@ This will enable you to have logs open simultaneously whilst testing in the app.
 #### XCode
 The latest Sora/Sulfur build should route logs to the XCode console allowing you to test and monitor the logs simultaneously.
 
-## With Sora on IOS Device
+## With Sora on a IDevice
 
 To test in Sora, you will obviously need to first sideload the app, join the official discord for help if needed!
 
