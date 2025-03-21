@@ -34,7 +34,7 @@ Note: If you used XCode and build the code yourself, then use the your choosen B
 You will find all the modules there, unfortunately they will have some gibberish name so you will need to which is the one you want to edit. Once you've found it you can easily edit anything you want and restart the Sora app to quickly test the changes.
 
 ### Live logs (MacOS)
-
+#### Terminal
 To have live logs, use the following command in your MacOS terminal:
 
 ```
@@ -49,11 +49,10 @@ tail -f /Users/paul/Library/Containers/me.cranci.sulfur/Data/Documents/logs.txt
 
 This will enable you to have logs open simultaneously whilst testing in the app. 
 
-## With Sora on IOS Device
+#### XCode
+The latest Sora/Sulfur build should route logs to the XCode console allowing you to test and monitor the logs simultaneously.
 
-```{warning}
-The Sora logger is pretty bad, so it is recommenced to test on PC first if you want proper logs!
-```
+## With Sora on IOS Device
 
 To test in Sora, you will obviously need to first sideload the app, join the official discord for help if needed!
 
