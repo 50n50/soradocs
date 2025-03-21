@@ -29,10 +29,25 @@ To find the cached scripts, head over to this file path on your Mac:
 /Users/[Your username]/Library/Containers/me.cranci.sulfur/Data/Documents/
 ```
 
-Note: If you used XCode and build the code yourself, then the your choosen Bundle Identifier instead of "me.cranci.sulfur"
+Note: If you used XCode and build the code yourself, then use the your choosen Bundle Identifier instead of "me.cranci.sulfur"
 
 You will find all the modules there, unfortunately they will have some gibberish name so you will need to which is the one you want to edit. Once you've found it you can easily edit anything you want and restart the Sora app to quickly test the changes.
 
+### Live logs (MacOS)
+
+To have live logs, use the following command in your MacOS terminal:
+
+```
+tail -f [PATH TO LOG.TXT FILE IN THE SULFUR DOCUMENTS FOLDER]
+```
+
+For example:
+
+```
+tail -f /Users/paul/Library/Containers/me.cranci.sulfur/Data/Documents/logs.txt
+```
+
+This will enable you to have logs open simultaneously whilst testing in the app. 
 
 ## With Sora on IOS Device
 
