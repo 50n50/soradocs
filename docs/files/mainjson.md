@@ -22,6 +22,7 @@ Sora uses a simple JSON file to manage and integrate different streaming modules
 | `asyncJS`      | boolean| Set to `true` to load the script asynchronously.    |[ ]    | `true`, `false` |
 | `streamAsyncJS`| boolean| Set to `true` to only load the stream function asynchronously. |[ ] | `true`, `false` |
 | `softsub`      | boolean| Set to `true` to load subtitles.                    |[ ]   | `true`, `false` |
+| `type`      | string| Category of what the site provides. Required for the module library |[ ]   | `anime`, `movies`, `shows` |
 
 ---
 
