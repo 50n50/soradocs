@@ -6,21 +6,42 @@ Due to the limitations of Swift's JavaScriptCore framework, certain JavaScript f
 
 ---
 
-### fetch("http://example.org")
+### fetch(URL, headers) (DEPRECATED)
+
+```{warning}
+This function will be deprecated soon. Please use fetchv2() instead.
+```
 
 Returns the fetched URL as a `String`
 
-⚠️ **Important:** Do not use .json() or .text() methods as those will not work with this fetch! 
+```{warning} 
+Do not use .json() or .text() methods as those will not work with this fetch! 
 If you want to use these functions, than look at the fetchv2() documentation.
+```
 
 For .json(), instead use:
 ```javascript
+const response = await fetch("http://example.org");
 const data = await JSON.parse(response);
 ```
 
 For .text(), Instead assign the value directly:
 ```javascript
+const response = fetch("http://example.org");
 const data = await response;
+```
+
+#### Usage:
+```javascript
+const url = "http://example.org";
+const headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
+    'Content-Type': 'application/json',
+    'Referer': 'http://example.org'
+}
+
+const response = await fetch(url, headers);
+const data = await JSON.parse(response);
 ```
 
 Goes without saying that this applies to StreamAsync mode too. You shouldn't need these methods in normal mode but if you do, use the above mentioned way.
