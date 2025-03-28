@@ -2,7 +2,15 @@
 
 Due to the limitations of Swift's JavaScriptCore framework, certain JavaScript functions that are commonly available in Node.js are not compatible with Sora. JavaScriptCore is designed to run JavaScript code in a sandboxed environment, primarily for web-related tasks, and does not provide built-in support for many Node.js-specific features. We are actively working to add additional methods and will keep this documentation updated with new additions while exploring possible workarounds for these limitations.
 
-## New available methods
+## Methods
+
+---
+
+- [fetch() (DEPRECATED)](#fetchurl-headers-deprecated)
+- [fetchv2()](#fetchv2httpexampleorg-headers)
+- [atob()](#atobbase64string)
+- [btoa()](#btostring)
+
 
 ---
 
@@ -31,10 +39,10 @@ const response = fetch("http://example.org");
 const data = await response;
 ```
 
-#### Usage:
+#### Example Usage:
 ```javascript
 const url = "http://example.org";
-const headers = {
+const headers = { // Optional
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
     'Content-Type': 'application/json',
     'Referer': 'http://example.org'
@@ -48,9 +56,10 @@ Goes without saying that this applies to StreamAsync mode too. You shouldn't nee
 
 ---
 
-### fetchv2("http://example.org", headers)
+### fetchv2(URL, headers, method, body)
 
 This function is an improved version of fetch, designed to compensate for the lack of the JavaScriptCore framework in Swift. It returns a Promise with an enhanced response object that includes .text() and .json() methods for easier parsing.
+It supports GET, POST, PUT and PATCH methods.
 
 #### Usage:
 
@@ -60,19 +69,53 @@ Parameters:
 
 - `headers (Object, optional)`: An object containing key-value pairs for HTTP headers.
 
+- `method (String, optional)`: The HTTP method to use. Defaults to "GET".
+
+- `body (Object, optional)`: The body of the request. Only used for POST, PUT, and PATCH requests.
+
+
 #### Response Object:
 
-The returned object contains:
+The returned response object contains:
 
 - `.text()`: Returns a Promise that resolves to the response as a String.
 
 - `.json()`: Returns a Promise that resolves to the response parsed as a JSON object.
 
 
+#### Example Usage for GET Request:
 ```javascript
-const response = await fetchv2("http://example.org");
-const textData = await response.text(); // Retrieves text
-const jsonData = await response.json(); // Parses JSON
+
+const url = "http://example.org";
+const headers = { // Optional
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
+    'Content-Type': 'application/json',
+    'Referer': 'http://example.org'
+}
+
+const response = await fetchv2(url, headers);
+const data = await response.json(); // or response.text();
+
+```
+
+#### Example Usage for POST Request:
+```javascript
+
+const url = "http://example.org";
+const headers = { // Optional
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
+    'Content-Type': 'application/json',
+    'Referer': 'http://example.org'
+}
+const method = "POST";
+const body = {
+    key: "value",
+    key2: "value2"
+}
+
+const response = await fetchv2(url, headers, method, body);
+const data = await response.json(); // or response.text();
+
 ```
 
 ---
